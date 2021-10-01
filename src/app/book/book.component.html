@@ -1,0 +1,88 @@
+
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title> Book</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+
+<ion-card >
+  <ion-card-header>
+    <ion-toolbar>
+      <ion-buttons slot="primary">
+        <ion-button (click)="clickedStar()">
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-button>
+        <ion-button (click)="addnote()">
+          <ion-icon slot="icon-only" name="add"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-card-title>Peril Bob Woodward</ion-card-title>
+      <ion-buttons slot="end">
+
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-card-header>
+  <ion-card-content>
+
+      <img src="https://img.mobiscroll.com/demos/card_2.png">
+
+      <ion-row>
+        <ion-col size="2">
+          <ion-icon name="book"></ion-icon>
+        </ion-col>
+        <ion-col>
+          Peril Bob Woodward
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="2">
+          <ion-icon name="person"></ion-icon>
+        </ion-col>
+        <ion-col>
+          Willan Peter
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="4">
+          Progress
+        </ion-col>
+        <ion-col>
+          67%
+        </ion-col>
+      </ion-row>
+
+    </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Note</ion-card-title>
+
+  </ion-card-header>
+  <ion-card-content>
+    Keep close to Nature's heart... and break clear away, once in awhile,
+    and climb a mountain or spend a week in the woods. Wash your spirit clean.
+  </ion-card-content>
+
+</ion-card>
+
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Quote</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    Keep close to Nature's heart... and break clear away, once in awhile,
+    and climb a mountain or spend a week in the woods. Wash your spirit clean.
+  </ion-card-content>
+
+</ion-card>

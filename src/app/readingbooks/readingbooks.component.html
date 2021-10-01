@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> reading books</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-grid *ngFor="let book of allbooks ">
+  <ion-row>
+
+    <ion-card (click)="bookClick()">
+      <ion-card-header>
+        <ion-card-subtitle>{{book.author}}</ion-card-subtitle>
+        <ion-card-title>{{book.name}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="{{book.url}}">
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+
+  </ion-row>
+</ion-grid>
+
+
+
+
+
